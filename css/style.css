@@ -6,6 +6,7 @@
 body {
     font-family: Arial;
     margin: 0;
+    height: 100%;
 }
 
 /* Header */
@@ -13,7 +14,8 @@ body {
     display: flex;
     background-color: rgb(1, 57, 64);
     color: rgb(236, 236, 236);
-    height: 3.73rem;
+    height: 10vh;
+    min-height: 55px;
 }
 
 .header__titlebox {
@@ -102,19 +104,24 @@ main {
 aside {
     flex: 18%;
     background-color: rgb(33, 37, 41);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     min-width: 100px;
+    height: 90vh;
 
+    
 }
 
 .main__nav {
-    flex:1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: max-content;
+    
 
 }
 
 .nav__ul {
+    flex: content;
     list-style-type: none;
     padding: 0 0 0 20px;
     margin: 0;
